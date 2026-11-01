@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Khoa Tran">
 <title>Contacts</title>
 
 <style>
@@ -84,6 +86,11 @@
       <td>Steven</td>
     </tr>
   </table>
+  
+<script>
+  // Create an array for names.
+  const names = ["Arnold", "Sly", "Dwayne", "Vin", "JCVD", "Steven"];
+</script>
 
   <!-- Create button to ask user for input and search -->
   <button onclick="
@@ -96,7 +103,6 @@
       let slot = parseInt(prompt('Enter a slot number (0 to 5):'));
 
       // Use a while loop to look for the slot in the array
-      let found = false;
       let i = 0;
       while (i < names.length && i != slot) {
         i = i + 1;
@@ -111,10 +117,7 @@
   ">Find a contact by slot number</button>
 </div>
 
-<script>
-  // Create an array for names.
-  const names = ["Arnold", "Sly", "Dwayne", "Vin", "JCVD", "Steven"];
-</script>
+
 
 </body>
 </html>
